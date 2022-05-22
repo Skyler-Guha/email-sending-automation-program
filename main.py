@@ -30,7 +30,6 @@ def cls_email(event):
 def cls_pass(event):
     if(pass_entry.get()=="Password" and event!="cb"):
         pass_entry.delete(0,END)
-
     if(pass_checkvar.get()==0 and pass_entry.get()!="Password"):
         pass_entry.config(show="*")
     elif(pass_entry.get()!="Password"):
@@ -169,7 +168,6 @@ h=600
 window.geometry("960x600")
 window.resizable(width=False, height=False)
 
-
 #panel defenations
 log_panel = PanedWindow(window)
 log_panel.configure(bg="#fac3db",width=w,height=h)
@@ -219,7 +217,6 @@ recipient_entry.bind("<Button-1>", cls_recip)
 recipient_checkvar = IntVar()
 recipient_check =  Checkbutton(writeup_panel, text = "Get recipient list from CVS", variable = recipient_checkvar,bg="#fac3db",fg="black",font=("Times New Roman",15),command=recip_selector)
 recipient_check.place(x=680,y=45)
-#add "To:" entry box and add radio button named "use cvs instead" that replaces text entry box
 
 subject_entry = Entry(writeup_panel, width=140)
 subject_entry.place(x=50,y=100)
