@@ -1,4 +1,4 @@
-# terminal-math-adventures
+# Email Sending Automation Program
 
 ![Alt Text](https://github.com/Skyler-Guha/skyler-guha.github.io/blob/main/assets/images/email-sending-automation-program-demo.gif)
 
